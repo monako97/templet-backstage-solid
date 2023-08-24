@@ -6,6 +6,9 @@
   "scripts": {},
   "license": "MIT",
   "devDependencies": {},
+  "dependencies": {
+    "neko-ui": "^2.3.1"
+  },
   "files": [
     "config",
     "mock",
