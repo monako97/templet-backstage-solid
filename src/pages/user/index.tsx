@@ -1,5 +1,7 @@
+import { t } from '@app/locales';
+
 function User() {
-  return <div>User</div>;
+  return <div>{t.user}</div>;
 }
 
 export default User;

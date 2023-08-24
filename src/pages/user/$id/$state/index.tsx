@@ -1,3 +1,4 @@
+import { t } from '@app/locales';
 import { useParams } from '@moneko/solid';
 
 function UserState() {
@@ -5,10 +6,8 @@ function UserState() {
 
   return (
     <div>
-      Dynamic router: user/:id/type/:state
-      <pre>
-        <code>{JSON.stringify(params, null, 2)}</code>
-      </pre>
+      {t['user/:id/:state']}
+      <n-code lang="js" code={JSON.stringify(params, null, 2)} />
     </div>
   );
 }

@@ -1,12 +1,46 @@
 .main {
     display: block;
     inline-size: fit-content;
-    margin: auto;
+    padding: 16px;
 }
 
-.navs {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    list-style: none;
+.sider {
+    --text-heading: #fff;
+
+    display: block;
+    inline-size: 180px;
+    padding: 0 16px;
+    block-size: 100vb;
+    background-color: rgb(28 34 46 / 100%);
+
+    n-menu::part(menu) {
+        --menu-selection: rgb(255 255 255 / 15%);
+        --text-secondary: rgb(255 255 255 / 45%);
+        --text-color: rgb(255 255 255 / 65%);
+        --text-heading: #fff;
+    }
+
+    h3 {
+        text-align: center;
+        color: var(--text-heading);
+    }
+}
+
+.section {
+    display: block;
+    overflow-y: auto;
+    flex: 1;
+    max-block-size: 100vb;
+
+    n-tabs {
+        position: sticky;
+        z-index: 999;
+        background-color: rgb(255 255 255 / 50%);
+        inset-block-start: 0;
+        padding-block-start: 24px;
+        padding-inline: 16px;
+        backdrop-filter: blur(16px);
+        /* stylelint-disable-next-line */
+        -webkit-backdrop-filter: blur(16px);
+    }
 }

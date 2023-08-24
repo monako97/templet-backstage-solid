@@ -8,30 +8,10 @@ const router: RouteConfig[] = [
     children: [
       // 配置自定义路由
       {
-        path: 'user',
-        children: [
-          {
-            path: ':id',
-            children: [
-              {
-                path: '/',
-                meta: {
-                  title: '用户详情',
-                },
-              },
-            ],
-          },
-        ],
-      },
-      {
         path: 'about',
         children: [
           {
             path: '/',
-            component: lazy(() => import('@/pages/home')),
-          },
-          {
-            path: ':id',
             component: lazy(() => import('@/pages/home')),
           },
         ],

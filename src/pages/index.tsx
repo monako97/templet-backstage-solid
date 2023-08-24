@@ -1,5 +1,7 @@
+import { t } from '@app/locales';
+
 function Page() {
-  return <div>Root Page</div>;
+  return <div>{t.root}</div>;
 }
 
 export default Page;
