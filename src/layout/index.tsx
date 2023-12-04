@@ -1,5 +1,5 @@
 import { createEffect } from 'solid-js';
-import app from '@app';
+import app from '@app/info';
 import { lang, locales, setLang } from '@app/locales';
 import { Outlet, useNavigate, useSearchParams } from '@moneko/solid';
 import { type MenuOption, TabOption, theme } from 'neko-ui';
