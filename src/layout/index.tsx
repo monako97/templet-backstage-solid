@@ -1,7 +1,7 @@
 import { createEffect } from 'solid-js';
 import app from '@app/info';
 import { lang, locales, setLang } from '@app/locales';
-import { Outlet, useNavigate, useSearchParams } from '@moneko/solid';
+import { type RouteProps, useNavigate, useSearchParams } from '@moneko/solid';
 import { type MenuOption, TabOption, theme } from 'neko-ui';
 import styles from './index.less';
 import layout, { menuMap, prefixMenu, prefixTabs, setLayout } from './store';
@@ -56,7 +56,7 @@ setLayout('menus', [
 ]);
 // 设置当前激活的菜单和Tab
 setLayout('activeKey', 'root');
-function App() {
+function App(props: RouteProps<string>) {
   const navigate = useNavigate();
   const [search] = useSearchParams();
 
@@ -144,7 +144,7 @@ function App() {
           }}
         />
         <main class={styles.main}>
-          <Outlet />
+          {props.children}
         </main>
       </section>
     </n-provider>
