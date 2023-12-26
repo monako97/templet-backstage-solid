@@ -6,6 +6,10 @@ const router: RouteConfig[] = [
     path: '/',
     component: lazy(() => import('@/layout')),
     children: [
+      {
+        path: '/',
+        component: lazy(() => import('@/pages')),
+      },
       // 配置自定义路由
       {
         path: 'about',
