@@ -3,7 +3,7 @@ import app from '@app/info';
 import { lang, locales, setLang } from '@app/locales';
 import { type RouteProps, useNavigate, useSearchParams } from '@moneko/solid';
 import { type MenuOption, TabOption, theme } from 'neko-ui';
-import styles from './index.less';
+import * as styles from './index.less';
 import layout, { menuMap, prefixMenu, prefixTabs, setLayout } from './store';
 import '@/global.less';
 
