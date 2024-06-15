@@ -9,15 +9,14 @@ const conf: Partial<ConfigType> = {
       transform: '${member}',
     },
   },
-  proxy: [
-    {
-      context: ['/api/'],
-      target: 'http://localhost:8007/',
+  proxy: {
+    '/api/': {
+      target: 'http://127.0.0.1:8001/',
       changeOrigin: true,
       pathRewrite: { '^/api/': '/' },
       secure: false,
     },
-  ],
+  },
 };
 
 export default conf;
