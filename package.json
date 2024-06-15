@@ -1,6 +1,6 @@
 {
   "name": "templet-backstage-solid",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "backstage website",
   "main": "lib/index.js",
   "scripts": {},

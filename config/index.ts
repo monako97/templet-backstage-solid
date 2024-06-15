@@ -1,6 +1,11 @@
 import type { ConfigType } from 'PackageNameByCore';
 
 const conf: Partial<ConfigType> = {
+  htmlPluginOption: {
+    meta: {
+      'theme-color': 'rgb(28,34,46)',
+    },
+  },
   importOnDemand: {
     '@moneko/common': {
       transform: 'lib/${member}',
