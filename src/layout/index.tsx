@@ -1,5 +1,5 @@
 import { createEffect } from 'solid-js';
-import app from '@app/info';
+import { name } from '@app/info';
 import { lang, locales, setLang } from '@app/locales';
 import { type RouteProps, useNavigate, useSearchParams } from '@moneko/solid';
 import { type MenuOption, TabOption, theme } from 'neko-ui';
@@ -102,7 +102,7 @@ function App(props: RouteProps<string>) {
   return (
     <n-provider>
       <section class={styles.sider}>
-        <h3>{app.name}</h3>
+        <h3>{name}</h3>
         <n-menu
           field-names={{
             value: 'key',
