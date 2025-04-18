@@ -4,7 +4,7 @@ export { request } from '@moneko/request';
 extend({
   interceptor: {
     // 请求拦截器
-    request(option) {
+    async request(option) {
       // 请求前进行修改
       if (option.url.startsWith('/login')) {
         Object.assign(option, {
@@ -17,7 +17,7 @@ extend({
       return option;
     },
     // 响应拦截器
-    response(resp) {
+    async response(resp) {
       return resp;
     },
   },

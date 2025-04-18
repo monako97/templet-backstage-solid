@@ -1,13 +1,13 @@
 {
   "name": "templet-backstage-solid",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "backstage website",
   "main": "lib/index.js",
   "scripts": {},
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "neko-ui": "^2.10.0"
+    "neko-ui": "2.11.0"
   },
   "files": [
     "config",
