@@ -6,11 +6,6 @@ const conf: Partial<ConfigType> = {
       'theme-color': 'rgb(28,34,46)',
     },
   },
-  importOnDemand: {
-    lodash: {
-      transform: '${member}',
-    },
-  },
   proxy: {
     '/api/': {
       target: 'http://127.0.0.1:8001/',
