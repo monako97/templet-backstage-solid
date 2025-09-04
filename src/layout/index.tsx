@@ -2,11 +2,25 @@ import { createEffect } from 'solid-js';
 import { name } from '@app/info';
 import { lang, locales, setLang } from '@app/locales';
 import { type RouteProps, useNavigate, useSearchParams } from '@moneko/solid';
-import { type MenuOption, TabOption, theme } from 'neko-ui';
-import * as styles from './index.less';
-import layout, { menuMap, prefixMenu, prefixTabs, setLayout } from './store';
-import '@/global.less';
+import {
+  Code,
+  Dropdown,
+  Menu,
+  type MenuOption,
+  Provider,
+  registry,
+  TabOption,
+  Tabs,
+  theme,
+  Typography,
+} from 'neko-ui';
 
+import layout, { menuMap, prefixMenu, prefixTabs, setLayout } from './store';
+
+import '@/global.less';
+import * as styles from './index.less';
+
+registry(Menu, Tabs, Dropdown, Provider, Typography, Code);
 // 设置 Neko UI 的颜色模式为亮色
 theme.setScheme('light');
 // 设置左侧菜单项
@@ -143,9 +157,7 @@ function App(props: RouteProps<string>) {
             ),
           }}
         />
-        <main class={styles.main}>
-          {props.children}
-        </main>
+        <main class={styles.main}>{props.children}</main>
       </section>
     </n-provider>
   );

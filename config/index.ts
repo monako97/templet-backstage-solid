@@ -7,9 +7,6 @@ const conf: Partial<ConfigType> = {
     },
   },
   importOnDemand: {
-    '@moneko/common': {
-      transform: 'lib/${member}',
-    },
     lodash: {
       transform: '${member}',
     },
