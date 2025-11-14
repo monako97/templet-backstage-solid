@@ -1,4 +1,4 @@
-import { t } from '@app/locales';
+import { t } from 'app:locales';
 import { useNavigate, useParams } from '@moneko/solid';
 
 function User() {

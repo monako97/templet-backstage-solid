@@ -1,4 +1,4 @@
-import { t } from '@app/locales';
+import { t } from 'app:locales';
 
 function Page() {
   return <div>{t.root}</div>;

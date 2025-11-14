@@ -1,4 +1,4 @@
-import { type LocaleConfig } from '@app/locales';
+import { type LocaleConfig } from 'app:locales';
 
 const zhCN: LocaleConfig = {
   language: 'zh_CN',

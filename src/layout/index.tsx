@@ -1,6 +1,6 @@
 import { createEffect } from 'solid-js';
-import { name } from '@app/info';
-import { lang, locales, setLang } from '@app/locales';
+import { name } from 'app:info';
+import { lang, locales, setLang } from 'app:locales';
 import { type RouteProps, useNavigate, useSearchParams } from '@moneko/solid';
 import {
   Code,

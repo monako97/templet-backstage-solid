@@ -1,5 +1,5 @@
 import { createEffect, createMemo, createRoot, getOwner } from 'solid-js';
-import { t } from '@app/locales';
+import { t } from 'app:locales';
 import { BaseOption, MenuOption, TabOption, getOptions } from 'neko-ui';
 import { createStore } from 'solid-js/store';
 

@@ -1,4 +1,4 @@
-import { t } from '@app/locales';
+import { t } from 'app:locales';
 
 function User() {
   return <div>{t.user}</div>;
